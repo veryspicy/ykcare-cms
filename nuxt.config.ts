@@ -12,8 +12,8 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'keywords', content:  '颐康,老年养护,护理,护理中心,护理服务'},
         { hid: 'description', name: 'description', content: '颐康老年养护中心' },
-
-      ],
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' }
+      ,],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
