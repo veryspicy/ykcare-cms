@@ -2,12 +2,11 @@
 
   <v-app>
     <NuxtLayout>
-      <!-- 页面过渡效果 -->
-      <Transition name="page" mode="out-in">
+
         
       <!-- 缓存 -->
       <NuxtPage :keepalive="{ max:10 }" />
-      </Transition> 
+ 
     </NuxtLayout>
   </v-app>
 </template>

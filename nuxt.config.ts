@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   modules: [
+    "@nuxthub/core",
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
         // @ts-expect-error
@@ -61,5 +62,7 @@ export default defineNuxtConfig({
     },
     "nitro-cloudflare-dev"
   ],
-  
+  hub: {
+    blob:  true,
+  }
 })
